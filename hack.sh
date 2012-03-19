@@ -45,6 +45,15 @@ defaults write com.apple.finder QuitMenuItem -bool true
 echo "Show all filename extensions in Finder"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+echo "Use current directory as default search scope in Finder"
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+echo "Show Path bar in Finder"
+defaults write com.apple.finder ShowPathbar -bool true
+
+echo "Show Status bar in Finder"
+defaults write com.apple.finder ShowStatusBar -bool true
+
 echo "Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
