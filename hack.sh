@@ -33,8 +33,8 @@ defaults write com.apple.dock itunes-notifications -bool true
 # defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 # defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
-echo "Always show scrollbars"
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+# echo "Always show scrollbars"
+# defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
 echo "Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons"
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -77,7 +77,7 @@ echo "Disable press-and-hold for keys in favor of key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 echo "Set a blazingly fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 0.02
 
 echo "Set a shorter "Delay until key repeat"
 defaults write NSGlobalDomain InitialKeyRepeat -int 4
