@@ -1,4 +1,6 @@
 # Verbatim copy of: https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+# install it:
+#   curl -sL https://gist.github.com/raw/2108403/6991bfd5934471cccd7ae4ebc56aa023ce57d7a0/hack.sh | sh
 
 echo Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
